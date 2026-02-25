@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Drak s.r.o | Stavby • Reality • Pronájmy</title>
+  <meta name="description" content="Moderní template pro firmu: stavby, realitky, pronájmy, domy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Decorative background -->
+  <div class="bg">
+    <div class="bg__grid"></div>
+    <div class="orb orb--1" aria-hidden="true"></div>
+    <div class="orb orb--2" aria-hidden="true"></div>
+    <div class="orb orb--3" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+  </div>
+
+  <!-- Top bar -->
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Drak s.r.o">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Drak <span class="brand__plus">s.r.o</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Hlavní navigace">
+        <a class="nav__link" href="#sluzby">Služby</a>
+        <a class="nav__link" href="#projekty">Projekty</a>
+        <a class="nav__link" href="#tym">Tým</a>
+        <a class="nav__link" href="#nabidka">Nabídka</a>
+        <a class="nav__link" href="#reference">Reference</a>
+        <a class="nav__link" href="#proces">Proces</a>
+        <a class="nav__link" href="#faq">FAQ</a>
+        <a class="nav__link" href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="openQuick" type="button" aria-haspopup="dialog">
+          <span class="btn__spark" aria-hidden="true"></span>
+          Rychlá poptávka
+        </button>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Otevřít menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel" role="dialog" aria-label="Menu">
+        <div class="drawer__head">
+          <span class="drawer__title">Menu</span>
+          <button class="iconbtn" id="closeDrawer" aria-label="Zavřít menu" type="button">✕</button>
+        </div>
+        <a class="drawer__link" href="#sluzby">Služby</a>
+        <a class="drawer__link" href="#projekty">Projekty</a>
+        <a class="drawer__link" href="#tym">Tým</a>
+        <a class="drawer__link" href="#nabidka">Nabídka</a>
+        <a class="drawer__link" href="#reference">Reference</a>
+        <a class="drawer__link" href="#proces">Proces</a>
+        <a class="drawer__link" href="#faq">FAQ</a>
+        <a class="drawer__link" href="#kontakt">Kontakt</a>
+        <div class="drawer__cta">
+          <button class="btn btn--primary" id="openQuick2" type="button">Rychlá poptávka</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bgLayer is-a" id="heroBgA"></div>
+        <div class="hero__bgLayer is-b" id="heroBgB"></div>
+        <div class="hero__bgShade"></div>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill reveal">
+            <span class="dot" aria-hidden="true"></span>
+            Stavby • Reality • Pronájmy
+          </div>
+
+          <h1 class="h1 reveal" data-reveal="up">
+            Moderní stavby a reality, které
+            <span class="accent">mají dračí tah</span>.
+          </h1>
+
+          <p class="lead reveal" data-reveal="up" data-delay="120">
+            Navrhujeme, stavíme, prodáváme i pronajímáme. Od první skici až po klíče.
+            Minimalistický template s hromadou animací, modaly a plynulými přechody.
+          </p>
+
+          <div class="hero__cta reveal" data-reveal="up" data-delay="220">
+            <a class="btn btn--primary" href="#nabidka">
+              <span class="btn__spark" aria-hidden="true"></span>
+              Prohlédnout nabídku
+            </a>
+            <a class="btn btn--ghost" href="#projekty">Naše projekty</a>
+          </div>
+
+          <div class="stats reveal" data-reveal="up" data-delay="300">
+            <div class="stat">
+              <div class="stat__num" data-counter="128">0</div>
+              <div class="stat__label">dokončených zakázek</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-counter="38">0</div>
+              <div class="stat__label">aktuálních nabídek</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-counter="9">0</div>
+              <div class="stat__label">let zkušeností</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="frame reveal wipe" data-reveal="scale">
+            <div class="frame__glow" aria-hidden="true"></div>
+            <div class="frame__img" id="parallaxCard" aria-label="Ukázkové vizuály">
+              <div class="frame__top">
+                <span class="chip">Premium</span>
+                <span class="chip chip--ghost">Praha • Brno</span>
+              </div>
+
+              <div class="frame__title">
+                <span class="frame__kicker">Novostavby & pronájmy</span>
+                <span class="frame__headline">Rezidence Červená linie</span>
+              </div>
+
+              <div class="frame__actions">
+                <button class="iconbtn" id="openGallery" type="button" aria-haspopup="dialog" aria-label="Otevřít galerii">⧉</button>
+                <button class="iconbtn" id="openDetail" type="button" aria-haspopup="dialog" aria-label="Otevřít detail">↗</button>
+              </div>
+
+              <div class="frame__meta">
+                <div class="meta">
+                  <span class="meta__label">Od</span>
+                  <span class="meta__value">4 990 000 Kč</span>
+                </div>
+                <div class="meta">
+                  <span class="meta__label">Typ</span>
+                  <span class="meta__value">Rodinný dům</span>
+                </div>
+                <div class="meta">
+                  <span class="meta__label">Dispozice</span>
+                  <span class="meta__value">4+kk</span>
+                </div>
+              </div>
+
+              <div class="frame__thumbs" aria-hidden="true">
+                <span class="thumb" style="--i:0"></span>
+                <span class="thumb" style="--i:1"></span>
+                <span class="thumb" style="--i:2"></span>
+                <span class="thumb" style="--i:3"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating floating--a reveal" data-reveal="fade" data-delay="200">
+            <div class="floating__icon">🏗️</div>
+            <div class="floating__text">
+              <div class="floating__title">Stavby na míru</div>
+              <div class="floating__sub">Rozpočet • Harmonogram • Realizace</div>
+            </div>
+          </div>
+
+          <div class="floating floating--b reveal" data-reveal="fade" data-delay="280">
+            <div class="floating__icon">🏠</div>
+            <div class="floating__text">
+              <div class="floating__title">Realitní servis</div>
+              <div class="floating__sub">Prodej • Pronájem • Správa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollhint" aria-hidden="true">
+        <span class="scrollhint__line"></span>
+        <span class="scrollhint__text">scroll</span>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="sluzby">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">Služby, které na sebe navazují</span></h2>
+          <p class="muted reveal" data-delay="120">
+            Jeden tým, jeden styl, jasný proces. A mezi tím animace, přechody, mikrointerakce.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" data-reveal="fly-left">
+            <div class="card__top">
+              <div class="badge" data-countup="1">00</div>
+              <div class="card__icon">🧱</div>
+            </div>
+            <h3 class="h3">Stavební realizace</h3>
+            <p class="muted">Od základů po finální detaily. Kvalita, rychlost, čisté řešení.</p>
+            <div class="card__foot">
+              <button class="link" data-modal="service" data-title="Stavební realizace">Více</button>
+              <span class="hint">Klikni →</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-reveal="fly-left" data-delay="80">
+            <div class="card__top">
+              <div class="badge" data-countup="2">00</div>
+              <div class="card__icon">📐</div>
+            </div>
+            <h3 class="h3">Projekt & design</h3>
+            <p class="muted">Studie, vizualizace, dokumentace. Moderní vzhled i funkční dispozice.</p>
+            <div class="card__foot">
+              <button class="link" data-modal="service" data-title="Projekt & design">Více</button>
+              <span class="hint">Klikni →</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-reveal="fly-left" data-delay="160">
+            <div class="card__top">
+              <div class="badge" data-countup="3">00</div>
+              <div class="card__icon">🏘️</div>
+            </div>
+            <h3 class="h3">Reality</h3>
+            <p class="muted">Prodej a koupě nemovitostí s transparentním procesem a marketingem.</p>
+            <div class="card__foot">
+              <button class="link" data-modal="service" data-title="Reality">Více</button>
+              <span class="hint">Klikni →</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-reveal="fly-left" data-delay="240">
+            <div class="card__top">
+              <div class="badge" data-countup="4">00</div>
+              <div class="card__icon">🔑</div>
+            </div>
+            <h3 class="h3">Pronájmy & správa</h3>
+            <p class="muted">Výběr nájemníků, smlouvy, servis. Stabilní výnos bez stresu.</p>
+            <div class="card__foot">
+              <button class="link" data-modal="service" data-title="Pronájmy & správa">Více</button>
+              <span class="hint">Klikni →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projekty">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">Projekty</span></h2>
+          <div class="kpis reveal" data-reveal="fade" data-delay="140" id="kpiRow">
+            <div class="kpi"><div class="kpi__n" data-counter="12">0</div><div class="kpi__t">aktivních projektů</div></div>
+            <div class="kpi"><div class="kpi__n" data-counter="48">0</div><div class="kpi__t">prohlídek / měs.</div></div>
+            <div class="kpi"><div class="kpi__n" data-counter="96">0</div><div class="kpi__t">spokojených klientů</div></div>
+          </div>
+          <p class="muted reveal" data-delay="120">
+            Karty se rozsvěcují při hoveru, objevují se při scrollu a po kliknutí otevírají detail.
+          </p>
+        </div>
+
+        <div class="projects">
+          <button class="project reveal wipe" data-reveal="fly-left" data-project="0" type="button">
+            <span class="project__bg" style="--img:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=70')"></span>
+            <span class="project__content">
+              <span class="project__title">Rezidence Nord</span>
+              <span class="project__meta">Novostavby • Praha 8</span>
+              <span class="project__chip">Dokončeno</span>
+            </span>
+          </button>
+
+          <button class="project reveal wipe" data-reveal="pop" data-delay="80" data-project="1" type="button">
+            <span class="project__bg" style="--img:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=70')"></span>
+            <span class="project__content">
+              <span class="project__title">Červený loft</span>
+              <span class="project__meta">Rekonstrukce • Brno</span>
+              <span class="project__chip">Předáno</span>
+            </span>
+          </button>
+
+          <button class="project reveal wipe" data-reveal="fly-right" data-delay="160" data-project="2" type="button">
+            <span class="project__bg" style="--img:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1400&q=70')"></span>
+            <span class="project__content">
+              <span class="project__title">Rodinné domy Line</span>
+              <span class="project__meta">Výstavba • Zlín</span>
+              <span class="project__chip">Probíhá</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer -->
+    
+    <!-- Team -->
+    <section class="section section--alt" id="tym">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">Lidé v Drak s.r.o</span></h2>
+          <p class="muted reveal" data-delay="120">
+            Moderní dlaždice s fotkou. Klik → legenda + role + co má na starosti.
+          </p>
+        </div>
+
+        <div class="team">
+          <button class="person reveal wipe" data-reveal="fly-left" data-person="0" type="button" aria-label="Otevřít profil">
+            <span class="person__img" style="--img:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=70')"></span>
+            <span class="person__overlay"></span>
+            <span class="person__meta">
+              <span class="person__name">Jan Novák</span>
+              <span class="person__role">Stavby & realizace</span>
+              <span class="person__chip">Projektový manažer</span>
+            </span>
+          </button>
+
+          <button class="person reveal wipe" data-reveal="pop" data-delay="90" data-person="1" type="button" aria-label="Otevřít profil">
+            <span class="person__img" style="--img:url('https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=1200&q=70')"></span>
+            <span class="person__overlay"></span>
+            <span class="person__meta">
+              <span class="person__name">Petra Konečná</span>
+              <span class="person__role">Reality & pronájmy</span>
+              <span class="person__chip">Realitní specialistka</span>
+            </span>
+          </button>
+
+          <button class="person reveal wipe" data-reveal="fly-right" data-delay="180" data-person="2" type="button" aria-label="Otevřít profil">
+            <span class="person__img" style="--img:url('https://images.unsplash.com/photo-1550525811-e5869dd03032?auto=format&fit=crop&w=1200&q=70')"></span>
+            <span class="person__overlay"></span>
+            <span class="person__meta">
+              <span class="person__name">Marek Svoboda</span>
+              <span class="person__role">Design & dokumentace</span>
+              <span class="person__chip">Architekt</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="note reveal" data-reveal="fade" data-delay="220">
+          Fotky jsou demo (Unsplash). Vyměň jen URL v <code>index.html</code>.
+        </div>
+      </div>
+    </section>
+
+<section class="section" id="nabidka">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">Nabídka nemovitostí</span></h2>
+          <p class="muted reveal" data-delay="120">
+            Filtr je čistě frontend (demo). Klik na kartu otevře modal s detailními informacemi.
+          </p>
+        </div>
+
+        <div class="filter reveal" data-reveal="fade">
+          <button class="chipbtn is-active" data-filter="all" type="button">Vše</button>
+          <button class="chipbtn" data-filter="prodej" type="button">Prodej</button>
+          <button class="chipbtn" data-filter="pronajem" type="button">Pronájem</button>
+          <button class="chipbtn" data-filter="novostavba" type="button">Novostavby</button>
+        </div>
+
+        <div class="listings" id="listings">
+          <!-- injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt" id="reference">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">Reference</span></h2>
+          <p class="muted reveal" data-delay="120">
+            Carousel bez knihoven + animovaný progress bar.
+          </p>
+        </div>
+
+        <div class="testimonial reveal" data-reveal="up">
+          <div class="testimonial__track" id="tTrack" aria-live="polite"></div>
+
+          <div class="testimonial__controls">
+            <button class="iconbtn" id="tPrev" type="button" aria-label="Předchozí">←</button>
+            <div class="tbar" aria-hidden="true"><span id="tBar"></span></div>
+            <button class="iconbtn" id="tNext" type="button" aria-label="Další">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    
+    <!-- Process -->
+    <section class="section" id="proces">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">Jak pracujeme</span></h2>
+          <p class="muted reveal" data-delay="120">
+            Více prostoru, více nápadu. Čtyři kroky — a u každého „přílet“ dlaždice.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal wipe" data-reveal="fly-left">
+            <div class="step__n" data-countup="1">00</div>
+            <h3 class="h3">Záměr & rozpočet</h3>
+            <p class="muted">Rychlá konzultace, rámcový rozpočet, jasné priority.</p>
+          </article>
+
+          <article class="step reveal wipe" data-reveal="pop" data-delay="90">
+            <div class="step__n" data-countup="2">00</div>
+            <h3 class="h3">Návrh & dokumentace</h3>
+            <p class="muted">Projekt, vizualizace, výběr materiálů — čistě a moderně.</p>
+          </article>
+
+          <article class="step reveal wipe" data-reveal="fly-right" data-delay="180">
+            <div class="step__n" data-countup="3">00</div>
+            <h3 class="h3">Realizace</h3>
+            <p class="muted">Harmonogram, kontrola kvality, průběžné reporty.</p>
+          </article>
+
+          <article class="step reveal wipe" data-reveal="pop" data-delay="270">
+            <div class="step__n" data-countup="4">00</div>
+            <h3 class="h3">Prodej / pronájem</h3>
+            <p class="muted">Prezentace, fotky, prohlídky, smlouvy i následná správa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 reveal"><span class="shimmer">FAQ</span></h2>
+          <p class="muted reveal" data-delay="120">
+            Akordeon s velkým „odletem“ obsahu do stran.
+          </p>
+        </div>
+
+        <div class="faq">
+          <button class="faq__item reveal" data-reveal="fly-left" type="button">
+            <span class="faq__q">Jak rychle umíte dodat rozpočet?</span>
+            <span class="faq__icon">+</span>
+            <div class="faq__a">U menších zakázek často do 48 hodin. U větších projektů domluvíme rozsah a termín transparentně.</div>
+          </button>
+
+          <button class="faq__item reveal" data-reveal="pop" data-delay="90" type="button">
+            <span class="faq__q">Děláte i rekonstrukce bytů?</span>
+            <span class="faq__icon">+</span>
+            <div class="faq__a">Ano — od návrhu, přes realizaci, až po finální styling pro pronájem nebo prodej.</div>
+          </button>
+
+          <button class="faq__item reveal" data-reveal="fly-right" data-delay="180" type="button">
+            <span class="faq__q">Zajišťujete i realitní servis?</span>
+            <span class="faq__icon">+</span>
+            <div class="faq__a">Ano — fotky, inzerce, prohlídky, smlouvy, předání i správa nemovitosti.</div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+<section class="section" id="kontakt">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <h2 class="h2 reveal"><span class="shimmer">Pojďme to postavit.</span></h2>
+            <p class="muted reveal" data-delay="120">
+              Napiš nám. Odpovíme rychle — a template ti ukáže další animace (focus, validace, toast).
+            </p>
+
+            <div class="contact__grid reveal" data-delay="200">
+              <div class="mini">
+                <div class="mini__k">Telefon</div>
+                <div class="mini__v">+420 777 123 456</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">E‑mail</div>
+                <div class="mini__v">info@draksro.cz</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Adresa</div>
+                <div class="mini__v">Praha • ČR</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Otevírací doba</div>
+                <div class="mini__v">Po–Pá 9:00–17:00</div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal" data-reveal="up" id="contactForm">
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Jméno</span>
+                <input class="field__input" name="name" placeholder="Jan Novák" required />
+              </label>
+              <label class="field">
+                <span class="field__label">E‑mail</span>
+                <input class="field__input" name="email" type="email" placeholder="jan@email.cz" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field__label">O co máš zájem?</span>
+              <select class="field__input" name="topic" required>
+                <option value="" selected disabled>Vyber...</option>
+                <option>Stavba / rekonstrukce</option>
+                <option>Prodej / koupě nemovitosti</option>
+                <option>Pronájem / správa</option>
+                <option>Jiné</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Zpráva</span>
+              <textarea class="field__input field__input--area" name="message" placeholder="Napiš stručně, co potřebuješ..." required></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">
+                <span class="btn__spark" aria-hidden="true"></span>
+                Odeslat
+              </button>
+              <button class="btn btn--ghost" type="button" id="prefill">Vyplnit demo</button>
+            </div>
+
+            <p class="tiny muted">Toto je demo. Formulář nic neodesílá.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">Drak <span class="brand__plus">s.r.o</span></span>
+          </div>
+          <p class="tiny muted">© <span id="year"></span> Drak s.r.o • moderní template</p>
+        </div>
+
+        <div class="footer__right">
+          <a class="tiny muted" href="#top">Nahoru ↑</a>
+          <span class="sep" aria-hidden="true"></span>
+          <button class="tiny muted linklike" id="themeToggle" type="button">Přepnout kontrast</button>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modals -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Dialog">
+      <div class="modal__head">
+        <div>
+          <div class="modal__kicker" id="modalKicker">Detail</div>
+          <h3 class="modal__title" id="modalTitle">Název</h3>
+        </div>
+        <button class="iconbtn" id="modalClose" type="button" aria-label="Zavřít">✕</button>
+      </div>
+
+      <div class="modal__body" id="modalBody">
+        <!-- injected -->
+      </div>
+
+      <div class="modal__foot">
+        <button class="btn btn--ghost" data-close="1" type="button">Zavřít</button>
+        <a class="btn btn--primary" href="#kontakt" data-close="1">
+          <span class="btn__spark" aria-hidden="true"></span>
+          Chci nabídku
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
